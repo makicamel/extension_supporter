@@ -30,9 +30,9 @@ extension StaticSupporterDateTime on DateTime {
     );
   }
 
-  /// Alias of [DateTime]#add
-  DateTime operator +(Duration duration) => this.add(duration);
+  /// Alias of [DateTime]#add.
+  DateTime operator +(Duration duration) => add(duration);
 
   /// Alias of [DateTime]#subtract
-  DateTime operator -(Duration duration) => this.subtract(duration);
+  DateTime operator -(Duration duration) => subtract(duration);
 }
