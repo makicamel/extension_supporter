@@ -1,0 +1,15 @@
+name: static_supporter
+description:
+version: 0.0.1
+author: makicamel <unright@gmail.com>
+homepage: https://github.com/makicamel/static_supporter
+
+environment:
+  sdk: ">=2.6.0-dev <3.0.0"
+
+dependencies:
+  # meta: ^1.1.0
+  # intl: ^0.16.0
+
+dev_dependencies:
+  test: ^1.6.3
