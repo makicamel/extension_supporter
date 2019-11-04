@@ -31,4 +31,10 @@ extension StaticSupporterDateTime on DateTime {
       microsecond ?? this.microsecond,
     );
   }
+
+  /// Alias of [DateTime]#add
+  DateTime operator +(Duration duration) => this.add(duration);
+
+  /// Alias of [DateTime]#subtract
+  DateTime operator -(Duration duration) => this.subtract(duration);
 }
