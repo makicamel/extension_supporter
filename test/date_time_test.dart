@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:static_supporter/static_supporter.dart';
+import 'package:static_supporter/date_time.dart';
 
 void main() {
   test('DateTime#change', () {
