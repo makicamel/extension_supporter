@@ -1,3 +1,6 @@
+import 'package:extension_supporter/duration.dart';
+import 'package:extension_supporter/num.dart';
+
 extension ExtensionSupporterDateTime on DateTime {
   /// Recieve argument(s) and return new instance changed only recieved parameters' value.
   /// If no arguments passed, return same value instance.
@@ -40,7 +43,12 @@ extension ExtensionSupporterDateTime on DateTime {
   }
 
   /// Alias of [DateTime]#add.
-  DateTime operator +(Duration duration) => add(duration);
+  DateTime operator +(DurationMonth duration) {
+    if (duration.runtimeType == DurationMonth) {
+      return addMonth(duration.months);
+    }
+    return add(duration);
+  }
 
   /// Alias of [DateTime]#subtract
   DateTime operator -(Duration duration) => subtract(duration);

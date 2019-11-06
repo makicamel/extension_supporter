@@ -1,5 +1,6 @@
 import 'package:test/test.dart';
 import 'package:extension_supporter/date_time.dart';
+import 'package:extension_supporter/num.dart';
 
 void main() {
   test('DateTime#change', () {
@@ -53,5 +54,13 @@ void main() {
     expect(DateTime(2020, 2, 29).addMonth(-1), DateTime(2020, 1, 29));
     expect(DateTime(2020, 2, 29).addMonth(12), DateTime(2021, 2, 28));
     expect(DateTime(2020, 1, 31).addMonth(13), DateTime(2021, 2, 28));
+  });
+
+  test('DateTime#+ n.months', () {
+    expect(DateTime(2020, 1, 31) + 1.months, DateTime(2020, 2, 29));
+    expect(DateTime(2020, 2, 29) + 1.months, DateTime(2020, 3, 29));
+    expect(DateTime(2020, 2, 29) + 0.months, DateTime(2020, 2, 29));
+    expect(DateTime(2020, 2, 29) + 12.months, DateTime(2021, 2, 28));
+    expect(DateTime(2020, 1, 31) + 13.months, DateTime(2021, 2, 28));
   });
 }
