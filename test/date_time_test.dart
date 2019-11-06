@@ -45,4 +45,13 @@ void main() {
     expect(DateTime(2000, 1, 2, 10, 20, 30, 4, 5).change(),
         DateTime(2000, 1, 2, 10, 20, 30, 4, 5));
   });
+
+  test('DateTime#addMonth', () {
+    expect(DateTime(2020, 1, 31).addMonth(1), DateTime(2020, 2, 29));
+    expect(DateTime(2020, 2, 29).addMonth(1), DateTime(2020, 3, 29));
+    expect(DateTime(2020, 2, 29).addMonth(0), DateTime(2020, 2, 29));
+    expect(DateTime(2020, 2, 29).addMonth(-1), DateTime(2020, 1, 29));
+    expect(DateTime(2020, 2, 29).addMonth(12), DateTime(2021, 2, 28));
+    expect(DateTime(2020, 1, 31).addMonth(13), DateTime(2021, 2, 28));
+  });
 }

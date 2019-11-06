@@ -30,6 +30,15 @@ extension ExtensionSupporterDateTime on DateTime {
     );
   }
 
+  DateTime addMonth(int other) {
+    final newMonth = (year * 12 + month + other) % 12;
+    var result = change(month: month + other);
+    while (result.month != newMonth) {
+      result = result - 1.days;
+    }
+    return result;
+  }
+
   /// Alias of [DateTime]#add.
   DateTime operator +(Duration duration) => add(duration);
 
