@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:static_supporter/duration.dart';
+import 'package:extension_supporter/duration.dart';
 
 void main() {
   test('Duration#inWeeks', () {

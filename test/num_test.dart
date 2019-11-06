@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:static_supporter/num.dart';
+import 'package:extension_supporter/num.dart';
 
 void main() {
   test('Integer#duraion-getters', () {

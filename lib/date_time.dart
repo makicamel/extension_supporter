@@ -1,8 +1,8 @@
-extension StaticSupporterDateTime on DateTime {
+extension ExtensionSupporterDateTime on DateTime {
   /// Recieve argument(s) and return new instance changed only recieved parameters' value.
   /// If no arguments passed, return same value instance.
   /// DateTime(2020, 12, 31).change(year: 2001) => 2001-12-31 00:00:00.000
-  /// ** notice **
+  /// ** Notice **
   ///   If there's no corresponding date after change,
   ///   Dart convert the date-time to correct.
   /// DateTime(2020, 2, 29).change(year: 2021) => 2021-03-01 00:00:00.000

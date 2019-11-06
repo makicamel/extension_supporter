@@ -1,4 +1,4 @@
-# static_supporter
+# extension_supporter
 
 A new Flutter package project.
 

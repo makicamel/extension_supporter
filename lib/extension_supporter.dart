@@ -1,4 +1,4 @@
-library static_supporter;
+library extension_supporter;
 
 export './date_time.dart';
 export './duration.dart';

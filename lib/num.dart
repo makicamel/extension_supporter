@@ -1,10 +1,10 @@
-import 'package:static_supporter/duration.dart';
+import 'package:extension_supporter/duration.dart';
 
-extension StaticSupporterNum on num {
+extension ExtensionSupporterNum on num {
   /// Return a Duration object represented in weeks.
   /// 1.weeks   => 168:00:00.000000
   /// 1.1.weeks => 184:48:00.000000
-  Duration get weeks => days * StaticSupporterDuration.daysPerWeeks;
+  Duration get weeks => days * ExtensionSupporterDuration.daysPerWeeks;
 
   /// Return a Duration object represented in days.
   /// 2.days   => 48:00:00.000000

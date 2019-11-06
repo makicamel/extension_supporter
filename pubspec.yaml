@@ -1,8 +1,8 @@
-name: static_supporter
+name: extension_supporter
 description:
 version: 0.0.1
 author: makicamel <unright@gmail.com>
-homepage: https://github.com/makicamel/static_supporter
+homepage: https://github.com/makicamel/extension_supporter
 
 environment:
   sdk: ">=2.6.0-dev <3.0.0"

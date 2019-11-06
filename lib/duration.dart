@@ -1,4 +1,4 @@
-extension StaticSupporterDuration on Duration {
+extension ExtensionSupporterDuration on Duration {
   static const int daysPerWeeks = 7;
 
   /// Returns the number of whole weeks spanned by this Duration.
