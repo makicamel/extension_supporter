@@ -7,3 +7,8 @@ extension ExtensionSupporterDuration on Duration {
   /// Duration(days: 8).inWeeks => 1
   int get inWeeks => inDays ~/ daysPerWeeks;
 }
+
+class DurationMonth extends Duration {
+  int months;
+  DurationMonth({this.months = 0}) : super();
+}

@@ -1,6 +1,8 @@
 import 'package:extension_supporter/duration.dart';
 
 extension ExtensionSupporterNum on num {
+  DurationMonth get months => DurationMonth(months: toInt());
+
   /// Return a Duration object represented in weeks.
   /// 1.weeks   => 168:00:00.000000
   /// 1.1.weeks => 184:48:00.000000
